@@ -9,7 +9,7 @@ function Greeting() {
         <div className="flex flex-col md:flex-row h-fit gap-8 md:gap-18 py-20">
           <picture className="block flex-1 h-auto before-img after-img relative mb-8 md:mb-0">
             <img
-              src="/images/loboR.png"
+              src="/images/loboR.jpg"
               alt="Greeting Image"
               className="w-full md:w-[90%] h-full object-cover object-top m-auto border-3 border-base-100 md:mx-auto rounded-3xl"
             />

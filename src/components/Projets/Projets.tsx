@@ -50,9 +50,9 @@ function Projets() {
                   <li>Veille concurrentielle et analyse de marché</li>
                 </ul>
               </div>
-              <a data-fancybox="gallery" href="/images/collage.jpg" className="w-full lg:w-1/2 h-64">
+              <a data-fancybox="gallery" href="/images/collage.webp" className="w-full lg:w-1/2 h-64">
                 <img
-                  src="/images/collage.jpg"
+                  src="/images/collage.webp"
                   alt="Projet 2"
                   className="w-full h-full object-cover"
                 />
@@ -60,9 +60,9 @@ function Projets() {
             </div>
             {/* Projet 3 */}
             <div className="flex flex-col lg:flex-row bg-white rounded-xl shadow-xl overflow-hidden">
-              <a data-fancybox="gallery" href="/images/collage-2.jpg" className="w-full lg:w-1/2 h-64">
+              <a data-fancybox="gallery" href="/images/collage-2.webp" className="w-full lg:w-1/2 h-64">
                 <img
-                  src="/images/collage-2.jpg"
+                  src="/images/collage-2.webp"
                   alt="Projet 3"
                   className="w-full h-full object-cover"
                 />
