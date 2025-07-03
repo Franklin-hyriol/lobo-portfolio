@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&display=swap");
+@import "tailwindcss";
+@plugin "daisyui";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@plugin "daisyui" {
+  themes: light --default, dark;
+}
+
+@theme {
+  --font-lato: 'Lato', sans-serif;
+}
+
+body {
+  font-family: var(--font-lato);
+}
+
+.container {
+  margin: 0 auto;
+  @apply sm:px-10 px-5 max-w-[1240px] sm:max-w-[1280px];
+}
+
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+
+  --color-base-100: #ffffff;
+  --color-base-200: #f6f9ff;
+  --color-base-300: #bbcad6;
+  --color-base-content: #022235;
+  --color-primary: #a16ae8;
+  --color-primary-content: #ffffff;
+  --color-secondary: #603f8b;
+  --color-secondary-content: #022235;
+  --color-accent: #fd49a0;
+  --color-accent-content: #ffffff;
+
+  --color-neutral: #ffffff;
+  --color-neutral-content: rgba(7, 52, 93, 0.7);
+  --color-info: oklch(70% 0.165 254.624);
+  --color-info-content: oklch(28% 0.091 267.935);
+  --color-success: #00b679;
+  --color-success-content: #ffffff;
+  --color-warning: #ffdb74;
+  --color-warning-content: #ffffff;
+  --color-error: #f85656;
+  --color-error-content: #ffffff;
+  --radius-selector: 0.25rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0rem;
+  --size-selector: 0.21875rem;
+  --size-field: 0.21875rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 1;
+}
+
+h2 {
+  @apply text-4xl font-bold pb-4 border-b-1 border-base-300 mb-4;
+  color: var(--color-base-content);
+}
+
+.before-img::before {
+  content: "";
+  position: absolute;
+  top: -29px;
+  right: 0;
+  width: 200px;
+  height: 250px;
+  background-color:var(--color-primary);
+  z-index: -1;
+}
+
+.after-img::after {
+  content: "";
+  position: absolute;
+  bottom: -29px;
+  left: 0;
+  width: 200px;
+  height: 250px;
+  background-color: var(--color-secondary);
+  z-index: -1;
+}
+
+.text-stroke {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--color-base-content);
+}
